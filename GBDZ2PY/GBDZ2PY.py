@@ -6,13 +6,13 @@
 #    nums.append(value)
 #    value *= i + 1
 #print(nums)
-###задание 2
-#tmp=0
-#nums = [0,0,0]
-#while True:
-#    nums
-#    tmp=(1-(nums.[0]*y))+z
-#    print(tmp)
+####задание 2
+
+##for x in range(0,2):
+##    for y in range(0,2):
+##        for z in range(0,2):
+##            print(f'{x}|{y}|{z}|{not (x and y) or z}')
+
 ##задание 3
 #count = 0
 #a = str(input('1: '))
@@ -29,12 +29,12 @@
 #    tmp= search_counter(a,b[i])
 #    print(tmp)
 #    i+=1
-n = int(input())
-a = input().split()
-for _ in range(n):
-    aa = []
-    for i in range(len(a) - 1):
-        aa.append(a[i + 1])
-    aa.append(a[0])
-    a = aa
-print(a)
+#Задание 4
+step=1
+N= int(input('vvedite N: '))
+listN=list(range(-N,N+1))
+while step <=2:
+    n=listN[-step:] + listN[:-step]
+    print(n)
+    step+=1
+
